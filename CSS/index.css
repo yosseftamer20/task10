@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box !important;
+    text-decoration: none;
+    list-style: none !important;
+    font-style: normal !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    backdrop-filter: blur(15px);
+    font-family: "Playpen Sans", cursive;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-img {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+h2 {
+    font-family: "Playpen Sans", cursive;
+}
+
+.alert >i {
+    font-weight: 600;
+}
+
+
+@media (width <=768px) {
+    .left-image{
+        display: none;
+    }
+    .main-row{
+        width: 100% !important;
+    }
+}

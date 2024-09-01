@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box !important;
+    text-decoration: none;
+    list-style: none !important;
+    font-style: normal !important;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background-image: url(../images/home_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* backdrop-filter: blur(15px); */
+    font-family: "Playpen Sans", cursive;
+    /* width: 100%; */
+    min-height: 100vh;
+}
+
+a ,button {
+    font-family: "Playpen Sans", cursive;
+}

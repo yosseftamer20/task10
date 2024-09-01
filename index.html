@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" >
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+        <div class="main-row row w-75 shadow-lg rounded overflow-hidden bg-white p-2 ">
+            <div class="left-image col-md-5 p-0">
+                <img src="images/image.jpg" class="left-img img-fluid w-100 h-100 " alt="">
+            </div>
+            <div class="col-md-7 d-flex flex-column justify-content-center p-5 ">
+                <h2 class="mb-3 fw-bold">Join us today 👋</h2>
+                <p class="text-muted mb-4">Join our community of health-conscious individuals who believe in the power of a plant-based diet.</p>
+                <div class="main-form">
+                    <div id="errorNotification" class="alert alert-danger d-none" role="alert">
+                        <i  class=" fa-regular fa-circle-exclamation"></i> Please fill out all fields.
+                    </div>
+                    <div id="isNotExists" class="alert alert-danger d-none" role="alert">
+                        <i  class="fa-regular fa-circle-exclamation"></i> email not exists.
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="signInEmail" class="form-label">Email Address</label>
+                        <input oninput="Authentication(this)" type="email" id="signInEmail" class="form-control" placeholder="Enter your email">
+                        <p class="alert alert-warning p-1 fs-6 fw-bold  d-none my-1">Please enter a valid Gmail or Yahoo email address.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="signInPassword" class="form-label">Password</label>
+                        <input oninput="Authentication(this)" type="password" id="signInPassword" class="form-control" placeholder="Enter your password">
+                        <p class="alert alert-warning p-1 fs-6 fw-bold d-none my-1">
+                            Password must be at least 6 characters and include letters, numbers, and special characters.
+                        </p>
+                    </div>
+
+                    <button onclick="signIn()" class="btn btn-outline-success btn-lg w-100 mb-2">Login</button>
+                </div>
+                <p class="text-muted">Don't have an account? <a href="signup.html" class="text-dark">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
